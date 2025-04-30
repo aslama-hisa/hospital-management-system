@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>appointment</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <style>
+        .dropdown-menu li:nth-child(1) a,
+        .dropdown-menu li:nth-child(2) a,
+        .dropdown-menu li:nth-child(3) a {
+            color: black !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="page-wrapper" style="overflow: visible;">
+        <!-- Preloader -->
+        <!-- <div class="preloader"></div> -->
+        <!-- Preloader -->
+        <!--header top-->
+
+        <!--Header Upper-->
+        <section class="header-uper">
+            <div class="container clearfix">
+                <div class="logo">
+                    <figure>
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="" width="130">
+                        </a>
+                    </figure>
+                </div>
+                <div class="right-side">
+                    <ul class="contact-info">
+                        <li class="item">
+                            <div class="icon-box">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <strong>Email</strong>
+                            <br>
+                            <a href="#">
+                                <span>info@medic.com</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <div class="icon-box">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <strong>Call Now</strong>
+                            <br>
+                            <span>+ (88017) - 123 - 4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Header Upper-->
+
+        <!--Main Header-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="doctor.html">Doctors</a>
+                        </li>
+                        <li>
+                            <a href="registration.html">Registration</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="DOCLOGIN.html">Doctor</a></li>
+                                <li><a href="PATLOGIN.html">Patient</a></li>
+                                <li><a href="ADMINLOG.html">ADMIN</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="DOCLOGIN.html">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--End Main Header -->
+
+        <!--Page Title-->
+        <section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+            <div class="container">
+                <div class="title-text">
+                    <h1>PATIENT HISTORY</h1>
+                    <ul class="title-menu clearfix">
+                        <li>
+                            <a href="index.html">home &nbsp;/</a>
+                        </li>
+                        <li> <a href="patienthis.html">Patient History</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Page Title-->
+        
+        <!-- Contact Section -->
+        <section class="blog-section section style-three pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="contact-area style-two">
+                            <div class="section-title">
+                                <h3>Add <span>Patient History</span></h3>
+                            </div>
+                            <form name="contact_form" onsubmit="AddHistory()" class="default-form contact-form" method="post">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" name="Name" placeholder="Name" required> 
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="phone" id="phone" name="phone" placeholder="Phone" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="date" id="date" name="date" placeholder="Date" required>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="form_message" placeholder="Your Message"
+                                        required=""></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" onclick="Sui()" id="Btn-addHistory" class="btn-style-one" >Submit</button>
+                                </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!--footer-main-->
+
+    <!--End footer-main-->
+
+    </div>
+    <!--End pagewrapper-->
+
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".header-top">
+        <span class="fa fa-long-arrow-up"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="plugins/bootstrap.min.js"></script>
+    <script>
+        function Sui() {
+              event.preventDefault();
+
+
+              let data = {};
+              data.name = document.getElementById("name").value;
+              data.phone = document.getElementById("phone").value;
+              data.date = document.getElementById("date").value;
+              data.message = document.getElementById("message").value;
+              const xhr = new XMLHttpRequest();
+              xhr.withCredentials = true;
+              data = JSON.stringify(data);
+
+              xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === this.DONE) {
+                          console.log(this.responseText);
+                          alert("history updated successfully");
+                    }
+              });
+
+              xhr.open("POST", "http://localhost:3000/addhis");
+              xhr.setRequestHeader("Accept", "/");
+              xhr.setRequestHeader("Content-Type", "application/json");
+              xhr.send(data);
+
+        }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<style>
+  .side-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: #000000;
+    overflow-y: auto;
+  }
+
+  .side-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .side-navbar li {
+    border-bottom: 1px solid #000000;
+  }
+
+  .side-navbar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #48bdc5;
+  }
+
+  .side-navbar a i {
+    margin-right: 10px;
+  }
+
+  .side-navbar a:hover {
+    background-color: #000000;
+  }
+</style>
