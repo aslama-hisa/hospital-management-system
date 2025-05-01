@@ -2,11 +2,6 @@
 Project Overview
 The Hospital Management System (HMS) project aims to develop a comprehensive software application designed to facilitate patient data management and enhance the interaction between doctors and patients. The system is intended to streamline clinic workflows, improve communication, and provide a better healthcare experience for users.
 
-Authors and Guidance
-Authors: Archana C B, Aslama Hisa, Roshna Kabeer, Sridhanya S
-
-Guided by: Mrs. Raji S R
-
 Objectives
 The primary objectives of the HMS include:
 
