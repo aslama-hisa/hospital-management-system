@@ -25,7 +25,7 @@ The HMS encompasses several key features:
 
 4.Accessibility: The system can be used in public places with Wi-Fi, making it convenient for healthcare providers.
 
-Technical Specifications
+Technical Specifications:
 
 1.Architectural Design: The system is structured using a modular approach, visualized through a structure chart that outlines the relationships between different modules.
 
